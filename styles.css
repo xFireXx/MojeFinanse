@@ -1,0 +1,152 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #fdfdff;
+}
+
+.heading {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.h1-span {
+    background-color: #6048fe;
+    color: white;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.option {
+    padding: 50px;
+    width: 50%;
+    background-color: #6048fe;
+    text-transform: uppercase;
+    text-align: center;
+    -webkit-border-radius: 80px;
+    -moz-border-radius: 80px;
+    border-radius: 80px;
+    margin-bottom: 50px;
+}
+
+.a-option {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Strona dodaj_wydatek*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 1px solid #000;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.btn-add {
+    border: 1px solid black;
+    background-color: transparent;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.btn-add:hover {
+    color: white;
+    background-color: #6048fe;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+
+@media all and (min-width: 800px) {
+    .h1-heading {
+        font-size: 34px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .h1-heading {
+        font-size: 44px;
+    }
+}
+
+@media all and (min-width: 760px) {
+    .options {
+        flex-direction: row;
+    }
+
+    .option {
+        width: 30%;
+        margin: 5px;
+    }
+}
+
+@media all and (min-width: 1280px) {
+    .a-option {
+        font-size: 30px;
+    }
+}
