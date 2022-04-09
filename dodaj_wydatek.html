@@ -25,36 +25,29 @@
             <h2>Dodaj wydatek</h2>
             <form action="#" class="inputs">
                 <input type="text"  class="input" id="name" name="name" required placeholder="Wpisz nazwę">
-                <input type="text"  class="input" id="category" name="category" required placeholder="Wpisz kategorię">
+                <select class="input" id="category">
+                    <option value="">Wybierz kategorie</option>
+                    <option value="zdrowie">Zdrowie</option>
+                    <option value="rozrywka">Rozrywka</option>
+                </select>
+                <input type="number"  class="input" id="price" name="price" required placeholder="Koszt w zł">
                 <input type="date"  class="input" id="date" name="date" required>
-                <button type="submit" class="btn-add">Dodaj</button>
+                <button type="submit" id="btn">Dodaj</button>
             </form>
         </div>
     </section>
     <section class="table">
-        <table>
+        <table class="tableAppendChild">
             <tr>
-                <th>Numer</th>
                 <th>Nazwa</th>
                 <th>Kategoria</th>
+                <th>Koszt</th>
                 <th>Data</th>
-            </tr>
-            <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
-                <td>Germany</td>
-            </tr>
-            <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-                <td>Mexico</td>
             </tr>
         </table>
     </section>
 </main>
 
-<script src="main.js"></script>
+<script src="index.js"></script>
 </body>
 </html>
